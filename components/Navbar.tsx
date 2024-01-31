@@ -20,7 +20,7 @@ export default function Navbar() {
         closed: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" },
     };
     return (
-        <div className="sticky top-0" >
+        <div className="sticky top-0 z-40" >
             <div className="pt-7 px-5 flex mx-auto max-w-[1400px] items-center justify-center sm:justify-between bg-white">
                 <div className="sm:hidden w-[0px] justify-self-start align-self-start absolute left-[9px]">
                     <Hamburger size={20} toggled={isOpen} onToggle={setOpen} />
