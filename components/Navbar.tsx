@@ -32,7 +32,7 @@ export default function Navbar() {
                     <Link className=" hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Читать</Link>
                     <Link className=" hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Смотреть</Link>
                     <Link className="text-lg font-bold text-blue-600 hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Бот</Link>
-                    <Link className="text-lg font-bold text-rose-600 hover:bg-rose-600 hover:text-white p-3 rounded-lg" href="/">PDF</Link>
+                    <Link className="text-lg font-bold text-rose-600 hover:bg-rose-600 hover:text-white p-3 rounded-lg" href="/admin">Админка</Link>
                 </div>
                 {/* <SearchButton/> */}
             </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 <Link className=" hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Читать</Link>
                 <Link className=" hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Смотреть</Link>
                 <Link className="text-lg font-bold text-blue-600 hover:bg-blue-600 hover:text-white p-3 rounded-lg" href="/">Бот</Link>
-                <Link className="text-lg font-bold text-rose-600 hover:bg-rose-600 hover:text-white p-3 rounded-lg" href="/">PDF</Link>
+                <Link className="text-lg font-bold text-rose-600 hover:bg-rose-600 hover:text-white p-3 rounded-lg" href="/admin">Админка</Link>
             </motion.div>
         </div>
 
