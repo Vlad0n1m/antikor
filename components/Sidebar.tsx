@@ -7,17 +7,17 @@ export default function Sidebar() {
     const [opened, setOpen] = useState(true)
     const handleClick = () => {
         setOpen(opened == true ? false : true)
-    }
+    } 
     return (
         <>
             <div className={`flex p-6 flex-col justify-between transition-all max-w-[300px] w-full bg-white shadow-xl h-full position fixed left-0 ${opened ? 'left-[-300px]' : 'left-[0px]'}`}>
                 <div className="flex flex-col items-start gap-3">
                     <Link href='/admin' className="font-black text-[30px] w-full ">ADMIN</Link>
                     <div className="bg-black h-[1px] w-full my-[15px]"></div>
-                    <Link className="flex gap-2 text-[18px] font-[500]  items-center" href='/admin/dashboard'><FontAwesomeIcon
+                    {/* <Link className="flex gap-2 text-[18px] font-[500]  items-center" href='/admin/dashboard'><FontAwesomeIcon
                         icon={faDashboard}
                         style={{ fontSize: 18, color: "black" }}
-                    />Дашборд</Link>
+                    />Дашборд</Link> */}
                     <Link className="flex gap-2 text-[18px] font-[500] items-center" href='/admin/articles'><FontAwesomeIcon
                         icon={faNewspaper}
                         style={{ fontSize: 18, color: "black" }}

@@ -1,6 +1,5 @@
 import ArticleItem from "@/components/ArticleItem"
 import Link from "next/link"
-
 export default function ArticlesPage() {
     return (
         <div className="flex flex-col">
@@ -24,7 +23,6 @@ export default function ArticlesPage() {
                 <ArticleItem/> 
                 <ArticleItem/> 
             </div>
-
         </div>
     )
 }
