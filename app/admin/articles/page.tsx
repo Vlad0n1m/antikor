@@ -1,4 +1,5 @@
-import ArticleItem from "@/components/ArticleItem"
+import ArticleItemAdmin from "@/components/ArticleItemAdmin"
+import DeleteArticlePopup from "@/components/DeleteArticlePopup"
 import Link from "next/link"
 export default function ArticlesPage() {
     return (
@@ -8,20 +9,20 @@ export default function ArticlesPage() {
                 <Link href='articles/create' className="px-6 py-3 text-center font-bold bg-black text-white border-2 border-black rounded-2xl hover:text-black transition-all hover:bg-white">+ Новая статья</Link>
             </div>
             <div className="flex flex-col mt-[50px] gap-[12px]">
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
-                <ArticleItem/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
+                <ArticleItemAdmin/> 
             </div>
         </div>
     )

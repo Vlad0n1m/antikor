@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
-
+import { faTrash, faEdit, faEye } from "@fortawesome/free-solid-svg-icons"
 interface UIProps {
     photo_url: string,
     username: string,
@@ -19,6 +19,15 @@ export default function UserItem(props: UIProps) {
                 <h3 className="mb-[10px] font-black text-[18px]">{props.username}</h3>
                 <p>{props.role}</p>
                 <p>Created at {props.date_created}</p>
+            </div>
+            <div className="flex gap-2 p-2 rounded-lg bg-slate-100">
+                <div className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
+                    <FontAwesomeIcon icon={faTrash} style={{color: 'red'}} />
+                </div>
+                <Link href="/admin/articles/create" className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
+                    <FontAwesomeIcon icon={faEdit} style={{color: 'blue'}} />
+                </Link>
+                
             </div>
         </Link>
     )
