@@ -24,7 +24,7 @@ export default function UserItem(props: UIProps) {
                 <div className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
                     <FontAwesomeIcon icon={faTrash} style={{color: 'red'}} />
                 </div>
-                <Link href="/admin/articles/create" className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
+                <Link href="/admin/users/create" className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
                     <FontAwesomeIcon icon={faEdit} style={{color: 'blue'}} />
                 </Link>
                 
