@@ -11,7 +11,7 @@ interface UIProps {
 
 export default function UserItem(props: UIProps) {
     return (
-        <Link href='/admin/users/create' className="flex p-3 border-2 flex-col border-black rounded-lg gap-3 items-center w-full sm:w-max hover:bg-black hover:text-white transition-all">
+        <div className="flex p-3 border-2 flex-col border-black rounded-lg gap-3 items-center w-full sm:w-max transition-all">
             <div className="bg-white rounded-lg">
                 <FontAwesomeIcon icon={faUser} style={{ fontSize: 100, color: "black" }} />
             </div>
@@ -21,14 +21,14 @@ export default function UserItem(props: UIProps) {
                 <p>Created at {props.date_created}</p>
             </div>
             <div className="flex gap-2 p-2 rounded-lg bg-slate-100">
-                <div className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
+                <div className="cursor-pointer p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
                     <FontAwesomeIcon icon={faTrash} style={{color: 'red'}} />
                 </div>
-                <Link href="/admin/users/create" className="p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
+                <Link href="/admin/users/create" className="cursor-pointer p-2 rounded-lg bg-white w-[40px] h-[40px] text-center">
                     <FontAwesomeIcon icon={faEdit} style={{color: 'blue'}} />
                 </Link>
                 
             </div>
-        </Link>
+        </div>
     )
 }
