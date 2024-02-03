@@ -1,13 +1,15 @@
-"use client"
+'use client'
+
 import { motion } from "framer-motion";
 import Link from "next/link"
-import Image from "next/image";
 import { Sling as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from "react"
-import { ReactSVGElement } from "react";
-import SearchButton from "./SearchButton";
-export default function Navbar() {
+import { usePathname } from 'next/navigation'
 
+export default function Navbar() {
+    const isAdmin = usePathname()?.includes("admin");
+
+    console.log(usePathname())
     const [isOpen, setOpen] = useState(false)
     useEffect(() => {
         isOpen
@@ -20,7 +22,7 @@ export default function Navbar() {
         closed: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" },
     };
     return (
-        <div className="sticky top-0 z-40" >
+        <div className={`sticky top-0 z-40 ${isAdmin ? 'hidden' : ''}`} >
             <div className="pt-7 px-5 flex mx-auto max-w-[1400px] items-center justify-center sm:justify-between bg-white">
                 <div className="sm:hidden w-[0px] justify-self-start align-self-start absolute left-[9px]">
                     <Hamburger size={20} toggled={isOpen} onToggle={setOpen} />
