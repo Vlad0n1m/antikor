@@ -33,7 +33,7 @@ export default function Sidebar() {
                     <div className="bg-black h-[1px] w-full my-[15px]"></div>
 
                 </div>
-                <Link href='/' className="rounded-lg text-center text-[18px] font-bold transition-all py-3 font-bold text-[14px] hover:text-white hover:border-3 hover:bg-black border-black border-2">Выйти</Link>
+                <Link href='/api/auth/signout' className="rounded-lg text-center text-[18px] font-bold transition-all py-3 font-bold text-[14px] hover:text-white hover:border-3 hover:bg-black border-black border-2">Выйти</Link>
             </div>
             <button onClick={handleClick} className={`w-[50px] rounded-full bg-black shadow-lg  fixed bottom-[10px] p-3 transition-all ${opened ? 'rotate-0 left-[10px]' : 'rotate-180 left-[310px]'}`}>
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
